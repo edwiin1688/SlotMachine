@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+
+    <script src="./node_modules/jquery-slotmachine/dist/slotmachine.min.js"></script>
+</head>
+
+<body>
+    <div id="machine">
+        <div>馬德里</div>
+        <div>倫敦</div>
+        <div>紐約</div>
+    </div>
+
+    <script>
+        const el = document.querySelector('#machine');
+        const machine = new SlotMachine(el, {
+            active: 1,
+            delay: 450,
+            auto: 1500
+        });
+    </script>
+
+</body>
+
+</html>
